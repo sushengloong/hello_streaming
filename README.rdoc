@@ -1,0 +1,3 @@
+== hello_streaming
+
+Using Rails 4's live streaming
