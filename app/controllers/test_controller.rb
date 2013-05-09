@@ -8,4 +8,14 @@ class TestController < ApplicationController
     end
     response.stream.close
   end
+
+  def random
+    lang = ["Ruby", "Python", "Node.JS", "Java", "Scala", "PHP"]
+    100.times do
+      random = rand(lang.length).to_i
+      response.stream.write "I love #{lang[random]}<br />\n"
+      sleep random
+    end
+    response.stream.close
+  end
 end
