@@ -2,6 +2,12 @@ HelloStreaming::Application.routes.draw do
   get 'test' => 'test#index'
   get 'random' => 'test#random'
 
+  get 'chat/index' => 'chat#index'
+  post 'chat/create' => 'chat#create'
+  get 'chat/events' => 'chat#events'
+
+  root to: 'chat#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

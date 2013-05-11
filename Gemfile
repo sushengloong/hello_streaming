@@ -5,7 +5,8 @@ gem 'rails', '4.0.0.beta1'
 
 gem 'sqlite3'
 
-gem 'puma'
+gem 'puma', '~> 1.6.3'
+gem 'redis'
 
 # Gems used only for assets and not required
 # in production environments by default.
